@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Akzidenz Grotesk';
+    src: url(https://br.maisfontes.com/akzidenz-grotesk.fonte);
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #fb365f;
+    color: white;
+    padding: 1rem;
+    justify-items: center;
+    max-width: 100%;
+}
+.second-layer{
+    background-color: #131921;
+    padding-top:  10px;
+    padding-bottom: 5px;
+    padding-left: 100%; padding-right: 100%;
+    
+    justify-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+.produtos {
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+.produto {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    width: 200px;
+    text-align: center;
+}
