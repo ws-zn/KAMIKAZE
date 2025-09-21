@@ -64,27 +64,55 @@ function resetAutoSlide() {
 showSlide(currentIndex);
 startAutoSlide();
 
+function initDropdownMobile() {
+  if (window.innerWidth <= 768) {
+    document.querySelectorAll(".dropdown-toggle").forEach(toggle => {
+      toggle.addEventListener("click", e => {
+        e.preventDefault();
+        let menu = toggle.nextElementSibling;
+
+        // Fecha outros antes de abrir
+        document.querySelectorAll(".dropdown-menu").forEach(m => {
+          if (m !== menu) m.classList.remove("ativo");
+        });
+
+        // Alterna o menu atual
+        menu.classList.toggle("ativo");
+      });
+    });
+
+    // Fecha ao clicar fora
+    document.addEventListener("click", e => {
+      if (!e.target.closest(".dropdown")) {
+        document.querySelectorAll(".dropdown-menu").forEach(m => m.classList.remove("ativo"));
+      }
+    });
+  }
+}
+
+// Inicializa
+initDropdownMobile();
+
+// Reinicializa ao redimensionar
+window.addEventListener("resize", () => {
+  document.querySelectorAll(".dropdown-menu").forEach(m => m.classList.remove("ativo"));
+  initDropdownMobile();
+});
+
+
+// Inicializa e revalida ao redimensionar
+initDropdownMobile();
+window.addEventListener("resize", () => {
+  document.querySelectorAll(".dropdown-menu").forEach(m => m.classList.remove("ativo"));
+  initDropdownMobile();
+});
+
 
 // ==================== MENU MOBILE ====================
 const menuToggle = document.createElement("div");
 menuToggle.classList.add("menu-toggle");
 menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
 document.querySelector("header .second-layer").prepend(menuToggle);
-
-const navContent = document.querySelector(".nav-content");
-
-menuToggle.addEventListener("click", () => {
-  navContent.style.display = navContent.style.display === "flex" ? "none" : "flex";
-  navContent.style.flexDirection = "column";
-  navContent.style.background = "#000";
-  navContent.style.position = "absolute";
-  navContent.style.top = "70px";
-  navContent.style.left = "0";
-  navContent.style.width = "100%";
-  navContent.style.padding = "15px";
-  navContent.style.gap = "15px";
-});
-
 
 // ==================== CARRINHO (BÁSICO) ====================
 const addToCartButtons = document.querySelectorAll(".add-to-cart, .produto button");
