@@ -1,34 +1,191 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <title>Kamikaze - Camisas de Futebol</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kamikaze - Camisas de Futebol</title>
+  <meta name="description" content="Loja Kamikaze - As melhores camisas de futebol do Brasil e do mundo. Modelos retrô, clubes nacionais, internacionais e seleções.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Fontes & Ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
-    <header>
-    <div class="second-layer">
-        <div class="header-">
-            <h1>Kamikaze</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="masculino.html">Masculino</a></li>
-                <li><a href="feminino.html">Feminino</a></li>
-                <li><a href="infantil.html">Infantil</a></li>
-            </ul>
-        </nav>
+  <!-- Barra superior -->
+  <div class="top-bar">
+    <div class="container">
+      <span>🚚 Frete grátis acima de R$ 199,90</span>
+      <span class="contact">📞 (11) 91234-5678 • contato@kamikaze.com</span>
     </div>
-    </header>
-    
-    <main>
-        <h2>Bem-vindo à Kamikaze</h2>
-        <p>Encontre as melhores camisas dos seus times favoritos aqui!</p>
-    </main>
-    
-    <footer>
-        <p>© 2025 Kamikaze</p>
-    </footer>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container second-layer">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="imagens/kamikaze_logo_transparente.png" alt="Kamikaze - Camisas de Futebol" class="logo">
+        </a>
+      </div>
+
+      <!-- Campo de busca -->
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar camisas..." aria-label="Buscar produtos">
+        <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+      </div>
+
+      <!-- Menu -->
+      <nav class="nav-content" aria-label="Menu principal">
+        <ul class="list">
+          <li><a href="#">Início</a></li>
+          <li class="dropdown">
+            <a href="#">Brasileiros <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Paulistas</a></li>
+              <li><a href="#">Cariocas</a></li>
+              <li><a href="#">Mineiros</a></li>
+              <li><a href="#">Nordeste</a></li>
+              <li><a href="#">Sul</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Internacionais</a></li>
+          <li><a href="#">Seleções</a></li>
+          <li><a href="#">Retrô</a></li>
+        </ul>
+      </nav>
+
+      <!-- Carrinho -->
+      <div class="cart" aria-label="Carrinho de compras">
+        <a href="carrinho.html" aria-label="Ir para o carrinho">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Slider -->
+    <section class="destaque">
+      <div class="slider">
+        <div class="slides">
+          <div class="slide active">
+            <img src="https://futgrife.com.br/cdn/shop/collections/BANNER_Brasileirao_1200x.webp" alt="Jogadores em campo">
+            <div class="texto-banner">
+              <h2>Bem-vindo à Kamikaze</h2>
+              <p>As melhores camisas dos seus times favoritos!</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="https://futgrife.com.br/cdn/shop/files/PromoSlide2.jpg" alt="Nova coleção 2025">
+            <div class="texto-banner">
+              <h2>Nova coleção 2025</h2>
+              <p>Garanta já sua camisa exclusiva.</p>
+            </div>
+          </div>
+          <div class="slide">
+            <img src="https://futgrife.com.br/cdn/shop/files/PromoSlide3.jpg" alt="Promoções especiais">
+            <div class="texto-banner">
+              <h2>Promoções especiais</h2>
+              <p>Descontos imperdíveis em toda loja!</p>
+            </div>
+          </div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="indicators">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Blocks -->
+    <section class="promo-blocks container">
+      <div class="promo-block">
+        <div class="promo-image" style="background-image: url('https://futgrife.com.br/cdn/shop/files/PromoInternacionais.jpg');">
+          <div class="promo-content">
+            <h3>Internacionais</h3>
+            <p>Lançamentos 2025</p>
+            <a href="#" class="btn">Ver agora</a>
+          </div>
+        </div>
+      </div>
+      <div class="promo-block">
+        <div class="promo-image" style="background-image: url('https://futgrife.com.br/cdn/shop/files/PromoRetro.jpg');">
+          <div class="promo-content">
+            <h3>Retrô</h3>
+            <p>Seleções clássicas</p>
+            <a href="#" class="btn">Descubra</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="produtos container">
+      <article class="produto" data-name="Camisa Santos 24/25" data-price="249.90">
+        <img src="https://futgrife.com.br/cdn/shop/files/image-removebg-preview-2023-02-24T195757.402_400x.png" alt="Camisa Santos">
+        <h3>Camisa Santos 24/25</h3>
+        <p><span class="preco-antigo">R$ 299,90</span> <span class="preco-novo">R$ 249,90</span> <span class="desconto">-17%</span></p>
+        <button class="add-to-cart">Comprar</button>
+      </article>
+
+      <article class="produto" data-name="Camisa Palmeiras 24/25" data-price="239.90">
+        <img src="https://futgrife.com.br/cdn/shop/files/Palmeirasawaycompatch2023epatrocinios_1_400x.webp" alt="Camisa Palmeiras">
+        <h3>Camisa Palmeiras 24/25</h3>
+        <p><span class="preco-antigo">R$ 289,90</span> <span class="preco-novo">R$ 239,90</span> <span class="desconto">-17%</span></p>
+        <button class="add-to-cart">Comprar</button>
+      </article>
+
+      <article class="produto" data-name="Camisa São Paulo I 24/25" data-price="229.90">
+        <img src="https://static.dafiti.com.br/p/new-balance-camisa-new-balance-s%C3%A3o-paulo-i-2025-jogador-patch-libertadores-4536-94453741-1-zoom.jpg" alt="Camisa São Paulo I 24/25">
+        <h3>Camisa São Paulo I 24/25</h3>
+        <p><span class="preco-antigo">R$ 279,90</span> <span class="preco-novo">R$ 229,90</span> <span class="desconto">-18%</span></p>
+        <button class="add-to-cart">Comprar</button>
+      </article>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-links container">
+      <div>
+        <h4>Atendimento</h4>
+        <p>contato@kamikaze.com</p>
+        <p>(11) 91234-5678</p>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#">Política de Troca</a></li>
+          <li><a href="#">Frete & Entrega</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guia</h4>
+        <ul>
+          <li><a href="#">Guia de Medidas</a></li>
+          <li><a href="#">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Siga-nos</h4>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <p class="copy">© 2025 Kamikaze - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>

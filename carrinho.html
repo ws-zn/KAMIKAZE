@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho - Kamikaze</title>
+  <meta name="description" content="Carrinho de compras - Kamikaze. Confira seus produtos e finalize sua compra com segurança.">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Fontes & Ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Barra superior -->
+  <div class="top-bar">
+    <div class="container">
+      <span>🚚 Frete grátis acima de R$ 199,90</span>
+      <span class="contact">📞 (11) 91234-5678 • contato@kamikaze.com</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header>
+    <div class="container second-layer">
+      <!-- Logo -->
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="imagens/kamikaze_logo_transparente.png" alt="Kamikaze - Camisas de Futebol" class="logo">
+        </a>
+      </div>
+
+      <!-- Menu -->
+      <nav class="nav-content">
+        <ul class="list">
+          <li><a href="index.html">Início</a></li>
+        </ul>
+      </nav>
+
+      <!-- Carrinho -->
+      <div class="cart">
+        <a href="carrinho.html">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="container carrinho-section">
+    <h2>🛒 Seu Carrinho</h2>
+    <table id="cart-table">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Ação</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Preenchido via JS -->
+      </tbody>
+    </table>
+
+    <div class="cart-summary">
+      <strong>Total: <span id="cart-total">R$ 0,00</span></strong>
+      <button id="finalizar">Finalizar Compra</button>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-links container">
+      <div>
+        <h4>Atendimento</h4>
+        <p>contato@kamikaze.com</p>
+        <p>(11) 91234-5678</p>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#">Política de Troca</a></li>
+          <li><a href="#">Frete & Entrega</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guia</h4>
+        <ul>
+          <li><a href="#">Guia de Medidas</a></li>
+          <li><a href="#">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Siga-nos</h4>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <p class="copy">© 2025 Kamikaze - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
