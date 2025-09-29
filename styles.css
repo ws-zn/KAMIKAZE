@@ -44,7 +44,7 @@ ul {
   padding: 6px 0;
 }
 
-.top-bar .container {
+.top-bar .top-bar-container {
   display: flex;
   justify-content: space-between;
   align-items: center;

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kamikaze - Camisas de Futebol</title>
+  <meta name="description" content="Loja Kamikaze - As melhores camisas de futebol do Brasil e do mundo. Modelos retrô, clubes nacionais, internacionais e seleções.">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="imagens/favicon-KAMIKAZE-removebg.ico" type="image/x-icon">
+
+  <!-- Fontes & Ícones -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <!-- Barra superior -->
+  <div class="top-bar">
+    <div class="container">
+      <span>🚚 Frete grátis acima de R$ 199,90</span>
+      <span class="contact">📞 (11) 91234-5678 • contato@kamikaze.com</span>
+    </div>
+  </div>
+
+  <div class="header-container">
+    <!-- Header -->
+    <header>
+      <div class="container second-layer">
+        <!-- Menu Mobile -->
+        <div class="icons">
+          <button id="menu-btn" class="icon">
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </button>
+          <button id="search-btn" class="icon">
+            <a href="#"><i class="fa fa-search"></i></a>
+          </button>
+        </div>
+        <aside class="sidebar" id="sidebar">
+          <button class="close-btn" id="close-btn">&times;</button>
+          <ul class="list"></ul>
+            <li class="dropdown"> <!-- Dropdown Menu -->
+            <a href="#" class="dropdown-toggle">Brasileiros <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="paulistas.html">Paulistas</a></li>
+                <li><a href="#">Cariocas</a></li>
+                <li><a href="#">Mineiros</a></li>
+                <li><a href="#">Nordeste</a></li>
+                <li><a href="#">Sul</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"> <!-- Dropdown Menu -->
+            <a href="#" class="dropdown-toggle">Internacionais <i class="fas fa-chevron-down"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="premier.html">Premier League</a></li>
+              <li><a href="#">La Liga</a></li>
+              <li><a href="#">Serie A</a></li>
+              <li><a href="#">Bundesliga</a></li>
+              <li><a href="#">Ligue 1</a></li>
+            </ul>
+            <li><a href="#">Seleções</a></li>
+            <li><a href="#">Retrô</a></li>
+          </ul>
+        </aside>
+        <!-- Logo -->
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="imagens/kamikaze_logo_transparente.png" alt="Kamikaze - Camisas de Futebol" class="logo">
+          </a>
+        </div>
+        <!-- Campo de busca -->
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar camisas..." aria-label="Buscar produtos">
+          <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+        </div>
+        <!-- Cadastro -->
+        <div class="cadastro" aria-label="Acessar conta">
+          <i class="fa fa-user-circle"></i>
+          <a href="cadastro.html" aria-label="Ir para cadastro">
+            <span>
+              Entrar / Criar conta
+              <span class="second-line">Minha conta</span>
+            </span>
+          </a>
+        </div>
+        <!-- Carrinho -->
+        <div class="cart" aria-label="Carrinho de compras">
+          <a href="carrinho.html" aria-label="Ir para o carrinho">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- Nav -->
+    <nav class="nav-content" aria-label="Menu principal">
+      <ul class="list">
+        <li><a href="#">Início</a></li>
+        <li class="dropdown"> <!-- Dropdown Menu -->
+          <a href="#" class="dropdown-toggle">Brasileiros <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Paulistas</a></li>
+            <li><a href="#">Cariocas</a></li>
+            <li><a href="#">Mineiros</a></li>
+            <li><a href="#">Nordeste</a></li>
+            <li><a href="#">Sul</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <!-- Dropdown Menu -->
+          <a href="#" class="dropdown-toggle">Internacionais <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Premier League</a></li>
+            <li><a href="#">La Liga</a></li>
+            <li><a href="#">Serie A</a></li>
+            <li><a href="#">Bundesliga</a></li>
+            <li><a href="#">Ligue 1</a></li>
+          </ul>
+        <li><a href="#">Seleções</a></li>
+        <li><a href="#">Retrô</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    <!-- Slider -->
+    <section class="destaque">
+      <div class="slider">
+        <div class="slides">
+          <div class="slide">
+            <img src="imagens/promoção de camisas de time!.png" alt="Jogadores em campo">
+          </div>
+          <div class="slide">
+            <img src="imagens/promoção SPFC!.png" alt="Nova coleção 2025">
+          </div>
+          <div class="slide">
+            <img src="imagens/promoção de camisas europeias!.png" alt="Promoções especiais">
+          </div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="indicators">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+          <span class="dot" data-slide="2"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="produtos container">
+      <article class="produto" data-name="Camisa Santos 24/25" data-price="249.90">
+        <img src="https://futgrife.com.br/cdn/shop/files/image-removebg-preview-2023-02-24T195757.402_400x.png" alt="Camisa Santos">
+        <h3>Camisa Santos 24/25</h3>
+        <p><span class="preco-antigo">R$ 299,90</span> <span class="preco-novo">R$ 249,90</span> <span class="desconto">-17%</span></p>
+        <button class="add-to-cart">Comprar</button>
+      </article>
+
+      <article class="produto" data-name="Camisa Palmeiras 24/25" data-price="239.90">
+        <img src="https://futgrife.com.br/cdn/shop/files/Palmeirasawaycompatch2023epatrocinios_1_400x.webp" alt="Camisa Palmeiras">
+        <h3>Camisa Palmeiras 24/25</h3>
+        <p><span class="preco-antigo">R$ 289,90</span> <span class="preco-novo">R$ 239,90</span> <span class="desconto">-17%</span></p>
+        <button class="add-to-cart">Comprar</button>
+      </article>
+
+      <article class="produto" data-name="Camisa São Paulo I 24/25" data-price="229.90">
+        <img src="https://imgcentauro-a.akamaihd.net/336x229/98766701A4.jpg?v=0" alt="Camisa São Paulo I 24/25" class="camisa-spfc">
+        <h3>Camisa São Paulo 24/25</h3>
+        <p><span class="preco-antigo">R$ 279,90</span> <span class="preco-novo">R$ 229,90</span> <span class="desconto">-18%</span></p>
+        <button class="add-to-cart">Comprar</button>
+      </article>
+
+      <article class="produto" data-name="Camisa São Paulo I 24/25" data-price="229.90">
+        <img src="https://futgrife.com.br/cdn/shop/files/99358904A2_11zon-Photoroom_11zon_400x.webp?v=1757073501" alt="Camisa São Paulo I 24/25">
+        <h3>Camisa Cruzeiro 24/25</h3>
+        <p><span class="preco-antigo">R$ 279,90</span> <span class="preco-novo">R$ 229,90</span> <span class="desconto">-18%</span></p>
+        <button class="add-to-cart">Comprar</button>
+      </article>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="footer-links container">
+      <div>
+        <h4>Atendimento</h4>
+        <p>contato@kamikaze.com</p>
+        <p>(11) 91234-5678</p>
+      </div>
+      <div>
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="#">Política de Troca</a></li>
+          <li><a href="#">Frete & Entrega</a></li>
+          <li><a href="#">Política de Privacidade</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Guia</h4>
+        <ul>
+          <li><a href="#">Guia de Medidas</a></li>
+          <li><a href="#">Perguntas Frequentes</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Siga-nos</h4>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <p class="copy">© 2025 Kamikaze - Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
