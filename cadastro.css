@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-.container {
+.top-bar-container, .header-cont{
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
