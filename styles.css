@@ -1,3 +1,9 @@
+/* ========= ROOTS ========== */
+
+:root {
+  color: #000;
+}
+
 /* ========= RESET ========= */
 * {
   margin: 0;
@@ -32,7 +38,7 @@ ul {
 
 /* ========= TOP BAR ========= */
 .top-bar {
-  background: #111;
+  background: #f83e60;
   color: #fff;
   font-size: 0.85rem;
   padding: 6px 0;
@@ -46,12 +52,15 @@ ul {
 
 /* ========= HEADER ========= */
 header {
-  background: #000;
   color: #fff;
   padding: 12px 0;
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+.header-container {
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(black, #2C2C2C);
 }
 
 .second-layer {
@@ -62,6 +71,7 @@ header {
 
 .logo {
   height: 60px;
+  padding-top: 10px;
 }
 
 /* SEARCH BAR */
@@ -70,7 +80,6 @@ header {
   max-width: 400px;
   margin: 0 20px;
   display: flex;
-  border: 1px solid #ddd;
   border-radius: 25px;
   overflow: hidden;
 }
@@ -96,10 +105,20 @@ header {
 }
 
 /* NAV */
+nav {
+  
+  padding: 10px;
+}
+
+.nav-content ul{
+  margin: auto;
+}
+
 .nav-content ul {
   display: flex;
-  gap: 20px;
   align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 150px;
 }
 
 .nav-content a {
@@ -116,19 +135,20 @@ header {
 /* DROPDOWN */
 .dropdown {
   position: relative;
+  display: inline-block;
+  padding-left: 15px;
 }
 
-.dropdown-menu {
-  display: none; /* escondido por padrão */
+ul.dropdown-menu {
+  display: none;
   position: absolute;
-  background: #111;
+  background-color: #2e2e2e;
+  min-width: 200px;
   top: 100%;
   left: 0;
-  min-width: 220px;
   padding: 10px;
-  z-index: 9999;
-  margin: 0;
-  list-style: none;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 
 .dropdown-menu li {
@@ -138,6 +158,11 @@ header {
 .dropdown-menu li a {
   color: #fff;
   display: block;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
 /* CART */
@@ -145,6 +170,7 @@ header {
   position: relative;
   overflow: visible;
   z-index: 10001;
+  margin-left: 10px;
 }
 
 .cart i {
@@ -157,30 +183,108 @@ header {
   right: -10px;
   background: #ff2850;
   color: #fff;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
   padding: 2px 6px;
   border-radius: 50%;
 }
 
+/* REGISTER */
+.cadastro {
+  max-width: 200px;
+  display: flex;
+  gap: 10px;
+}
+
+.cadastro i {
+  font-size: 1.4rem;
+  align-content: center;
+}
+
+.cadastro span {
+  font-size: 11px;
+  display: block;
+}
+
+span.second-line {
+  font-size: 14px;
+  font-weight: bold;
+}
+
 /* MENU MOBILE */
-.menu-toggle {
+.icons {
   display: none;
-  font-size: 1.6rem;
+  align-items: center;
+}
+
+.icons button {
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: white; 
   cursor: pointer;
+  padding-left: 10px;
+}
+
+.icons button:hover {
+  color: #f83e60;
+  transition-duration: .4s;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0; left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #111;
   color: #fff;
+  transition: 0.3s;
+  padding: 20px;
+  z-index: 1000;
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 20px;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar.active {
+  left: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+  .icons {
+    display: flex;
+    gap: 15px;
+  }
 }
 
 /* ========= SLIDER ========= */
 .slider {
   position: relative;
   width: 100%;
-  height: 450px;
   overflow: hidden;
 }
 
 .slides {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  height: 100%;
 }
 
 .slide {
@@ -189,10 +293,10 @@ header {
 }
 
 .slide img {
-  max-width: 100%;
-  height: auto;
+  width: 1270px;
+  height: 453px;
   display: block;
-  margin: 0 auto;
+  object-fit: cover;
 }
 
 .texto-banner {
@@ -316,7 +420,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 25px;
-  margin: 40px 0;
+  margin: 40px auto;
 }
 
 .produto {
@@ -388,6 +492,7 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
   margin-bottom: 20px;
+  padding: 0px 0px 0px 100px;
 }
 
 .footer-links h4 {
@@ -415,12 +520,6 @@ footer {
 }
 
 /* ========= RESPONSIVO ========= */
-@media (min-width: 769px) {
-  .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-}
-
 @media (max-width: 768px) {
   .search-bar {
     display: none;
@@ -454,10 +553,10 @@ footer {
   }
 
   .slider {
-    height: 300px;
+    max-height: 60vh;
   }
 
   .slide img {
-    height: 300px;
+    object-fit: contain;
   }
 }

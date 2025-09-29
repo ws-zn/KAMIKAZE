@@ -5,9 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kamikaze - Camisas de Futebol</title>
   <meta name="description" content="Loja Kamikaze - As melhores camisas de futebol do Brasil e do mundo. Modelos retrô, clubes nacionais, internacionais e seleções.">
-  
-  <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="imagens/favicon-KAMIKAZE-removebg.ico" type="image/x-icon">
 
   <!-- Fontes & Ícones -->
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,700&display=swap" rel="stylesheet" />
@@ -22,77 +21,117 @@
     </div>
   </div>
 
-  <!-- Header -->
-  <header>
-    <div class="container second-layer">
-      <!-- Logo -->
-      <div class="header-logo">
-        <a href="index.html">
-          <img src="imagens/kamikaze_logo_transparente.png" alt="Kamikaze - Camisas de Futebol" class="logo">
-        </a>
-      </div>
-
-      <!-- Campo de busca -->
-      <div class="search-bar">
-        <input type="text" placeholder="Buscar camisas..." aria-label="Buscar produtos">
-        <button aria-label="Buscar"><i class="fas fa-search"></i></button>
-      </div>
-
-      <!-- Menu -->
-      <nav class="nav-content" aria-label="Menu principal">
-        <ul class="list">
-          <li><a href="#">Início</a></li>
-          <li class="dropdown">
+  <div class="header-container">
+    <!-- Header -->
+    <header>
+      <div class="container second-layer">
+        <!-- Menu Mobile -->
+        <div class="icons">
+          <button id="menu-btn" class="icon">
+            <a href="#"><i class="fas fa-bars"></i></a>
+          </button>
+          <button id="search-btn" class="icon">
+            <a href="#"><i class="fa fa-search"></i></a>
+          </button>
+        </div>
+        <aside class="sidebar" id="sidebar">
+          <button class="close-btn" id="close-btn">&times;</button>
+          <ul class="list"></ul>
+            <li class="dropdown"> <!-- Dropdown Menu -->
             <a href="#" class="dropdown-toggle">Brasileiros <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="paulistas.html">Paulistas</a></li>
+                <li><a href="#">Cariocas</a></li>
+                <li><a href="#">Mineiros</a></li>
+                <li><a href="#">Nordeste</a></li>
+                <li><a href="#">Sul</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"> <!-- Dropdown Menu -->
+            <a href="#" class="dropdown-toggle">Internacionais <i class="fas fa-chevron-down"></i></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Paulistas</a></li>
-              <li><a href="#">Cariocas</a></li>
-              <li><a href="#">Mineiros</a></li>
-              <li><a href="#">Nordeste</a></li>
-              <li><a href="#">Sul</a></li>
+              <li><a href="premier.html">Premier League</a></li>
+              <li><a href="#">La Liga</a></li>
+              <li><a href="#">Serie A</a></li>
+              <li><a href="#">Bundesliga</a></li>
+              <li><a href="#">Ligue 1</a></li>
             </ul>
-          </li>
-          <li><a href="#">Internacionais</a></li>
-          <li><a href="#">Seleções</a></li>
-          <li><a href="#">Retrô</a></li>
-        </ul>
-      </nav>
-
-      <!-- Carrinho -->
-      <div class="cart" aria-label="Carrinho de compras">
-        <a href="carrinho.html" aria-label="Ir para o carrinho">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="cart-count">0</span>
-        </a>
+            <li><a href="#">Seleções</a></li>
+            <li><a href="#">Retrô</a></li>
+          </ul>
+        </aside>
+        <!-- Logo -->
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="imagens/kamikaze_logo_transparente.png" alt="Kamikaze - Camisas de Futebol" class="logo">
+          </a>
+        </div>
+        <!-- Campo de busca -->
+        <div class="search-bar">
+          <input type="text" placeholder="Buscar camisas..." aria-label="Buscar produtos">
+          <button aria-label="Buscar"><i class="fas fa-search"></i></button>
+        </div>
+        <!-- Cadastro -->
+        <div class="cadastro" aria-label="Acessar conta">
+          <i class="fa fa-user-circle"></i>
+          <a href="cadastro.html" aria-label="Ir para cadastro">
+            <span>
+              Entrar / Criar conta
+              <span class="second-line">Minha conta</span>
+            </span>
+          </a>
+        </div>
+        <!-- Carrinho -->
+        <div class="cart" aria-label="Carrinho de compras">
+          <a href="carrinho.html" aria-label="Ir para o carrinho">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+        </div>
       </div>
-    </div>
-  </header>
+    </header>
+    <!-- Nav -->
+    <nav class="nav-content" aria-label="Menu principal">
+      <ul class="list">
+        <li><a href="#">Início</a></li>
+        <li class="dropdown"> <!-- Dropdown Menu -->
+          <a href="#" class="dropdown-toggle">Brasileiros <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Paulistas</a></li>
+            <li><a href="#">Cariocas</a></li>
+            <li><a href="#">Mineiros</a></li>
+            <li><a href="#">Nordeste</a></li>
+            <li><a href="#">Sul</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"> <!-- Dropdown Menu -->
+          <a href="#" class="dropdown-toggle">Internacionais <i class="fas fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Premier League</a></li>
+            <li><a href="#">La Liga</a></li>
+            <li><a href="#">Serie A</a></li>
+            <li><a href="#">Bundesliga</a></li>
+            <li><a href="#">Ligue 1</a></li>
+          </ul>
+        <li><a href="#">Seleções</a></li>
+        <li><a href="#">Retrô</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <main>
     <!-- Slider -->
     <section class="destaque">
       <div class="slider">
         <div class="slides">
-          <div class="slide active">
-            <img src="https://futgrife.com.br/cdn/shop/collections/BANNER_Brasileirao_1200x.webp" alt="Jogadores em campo">
-            <div class="texto-banner">
-              <h2>Bem-vindo à Kamikaze</h2>
-              <p>As melhores camisas dos seus times favoritos!</p>
-            </div>
+          <div class="slide">
+            <img src="imagens/promoção de camisas de time!.png" alt="Jogadores em campo">
           </div>
           <div class="slide">
-            <img src="https://futgrife.com.br/cdn/shop/files/PromoSlide2.jpg" alt="Nova coleção 2025">
-            <div class="texto-banner">
-              <h2>Nova coleção 2025</h2>
-              <p>Garanta já sua camisa exclusiva.</p>
-            </div>
+            <img src="imagens/promoção SPFC!.png" alt="Nova coleção 2025">
           </div>
           <div class="slide">
-            <img src="https://futgrife.com.br/cdn/shop/files/PromoSlide3.jpg" alt="Promoções especiais">
-            <div class="texto-banner">
-              <h2>Promoções especiais</h2>
-              <p>Descontos imperdíveis em toda loja!</p>
-            </div>
+            <img src="imagens/promoção de camisas europeias!.png" alt="Promoções especiais">
           </div>
         </div>
         <button class="prev">&#10094;</button>
@@ -101,28 +140,6 @@
           <span class="dot active" data-slide="0"></span>
           <span class="dot" data-slide="1"></span>
           <span class="dot" data-slide="2"></span>
-        </div>
-      </div>
-    </section>
-
-    <!-- Promo Blocks -->
-    <section class="promo-blocks container">
-      <div class="promo-block">
-        <div class="promo-image" style="background-image: url('https://futgrife.com.br/cdn/shop/files/PromoInternacionais.jpg');">
-          <div class="promo-content">
-            <h3>Internacionais</h3>
-            <p>Lançamentos 2025</p>
-            <a href="#" class="btn">Ver agora</a>
-          </div>
-        </div>
-      </div>
-      <div class="promo-block">
-        <div class="promo-image" style="background-image: url('https://futgrife.com.br/cdn/shop/files/PromoRetro.jpg');">
-          <div class="promo-content">
-            <h3>Retrô</h3>
-            <p>Seleções clássicas</p>
-            <a href="#" class="btn">Descubra</a>
-          </div>
         </div>
       </div>
     </section>
@@ -144,8 +161,15 @@
       </article>
 
       <article class="produto" data-name="Camisa São Paulo I 24/25" data-price="229.90">
-        <img src="https://static.dafiti.com.br/p/new-balance-camisa-new-balance-s%C3%A3o-paulo-i-2025-jogador-patch-libertadores-4536-94453741-1-zoom.jpg" alt="Camisa São Paulo I 24/25">
-        <h3>Camisa São Paulo I 24/25</h3>
+        <img src="https://imgcentauro-a.akamaihd.net/336x229/98766701A4.jpg?v=0" alt="Camisa São Paulo I 24/25" class="camisa-spfc">
+        <h3>Camisa São Paulo 24/25</h3>
+        <p><span class="preco-antigo">R$ 279,90</span> <span class="preco-novo">R$ 229,90</span> <span class="desconto">-18%</span></p>
+        <button class="add-to-cart">Comprar</button>
+      </article>
+
+      <article class="produto" data-name="Camisa São Paulo I 24/25" data-price="229.90">
+        <img src="https://futgrife.com.br/cdn/shop/files/99358904A2_11zon-Photoroom_11zon_400x.webp?v=1757073501" alt="Camisa São Paulo I 24/25">
+        <h3>Camisa Cruzeiro 24/25</h3>
         <p><span class="preco-antigo">R$ 279,90</span> <span class="preco-novo">R$ 229,90</span> <span class="desconto">-18%</span></p>
         <button class="add-to-cart">Comprar</button>
       </article>

@@ -52,7 +52,7 @@ prevBtn.addEventListener("click", () => {
 
 // Auto slide
 function startAutoSlide() {
-  slideInterval = setInterval(nextSlide, 4000);
+  slideInterval = setInterval(nextSlide, 5000);
 }
 
 function resetAutoSlide() {
@@ -60,6 +60,7 @@ function resetAutoSlide() {
   startAutoSlide();
 }
 
+// Dropdown //
 // Inicialização
 showSlide(currentIndex);
 startAutoSlide();
@@ -99,20 +100,19 @@ window.addEventListener("resize", () => {
   initDropdownMobile();
 });
 
+// ==================== MENU MOBILE ====================
+const menuBtn = document.getElementById('menu-btn');
+const closeBtn = document.getElementById('close-btn');
+const sidebar = document.getElementById('sidebar');
 
-// Inicializa e revalida ao redimensionar
-initDropdownMobile();
-window.addEventListener("resize", () => {
-  document.querySelectorAll(".dropdown-menu").forEach(m => m.classList.remove("ativo"));
-  initDropdownMobile();
+menuBtn.addEventListener('click', () => {
+  sidebar.classList.add('active');
 });
 
+closeBtn.addEventListener('click', () => {
+  sidebar.classList.remove('active');
+});
 
-// ==================== MENU MOBILE ====================
-const menuToggle = document.createElement("div");
-menuToggle.classList.add("menu-toggle");
-menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
-document.querySelector("header .second-layer").prepend(menuToggle);
 
 // ==================== CARRINHO (BÁSICO) ====================
 const addToCartButtons = document.querySelectorAll(".add-to-cart, .produto button");
